@@ -212,8 +212,8 @@ async def quote_tweet():
     else:
         return jsonify({"error": "Request must be JSON"}), 400
 
-@app.route('/retweet_tweet', methods=['POST'])
-async def retweet_tweet():
+@app.route('/retweet', methods=['POST'])
+async def retweet():
     if request.is_json:
         data = request.get_json()
 
@@ -252,9 +252,10 @@ async def main():
                 await api.pool.add_account(username, password, email, email_password)
             except:
                 continue
-
+    
     await api.pool.login_all()
 
 if __name__ == "__main__":
     asyncio.run(main())
+    print("Running!")
     app.run(port=5000)
