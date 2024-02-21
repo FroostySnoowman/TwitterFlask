@@ -18,7 +18,7 @@ async def get_tweets_route_2():
     url = 'http://127.0.0.1:5000/get_tweets'
     
     json_data = {
-        "id": 783214
+        "id": 44196397
     }
     
     async with aiohttp.ClientSession() as session:
@@ -98,7 +98,7 @@ async def quote_tweet_route():
             print(f"Quote Tweet: {response}")
 
 async def retweet_route():
-    url = 'http://127.0.0.1:5000/quote_tweet'
+    url = 'http://127.0.0.1:5000/retweet'
     
     json_data = {
         "email": "elijahn9fal@gmx.com",
@@ -117,7 +117,7 @@ if __name__ == '__main__':
     loop.run_until_complete(get_tweets_route_2())
     loop.run_until_complete(search_user_route())
     loop.run_until_complete(get_tweet_route())
-    #loop.run_until_complete(like_tweet_route())
-    #loop.run_until_complete(reply_tweet_route())
-    #loop.run_until_complete(quote_tweet_route())
-    #loop.run_until_complete(retweet_route())
+    loop.run_until_complete(like_tweet_route())
+    loop.run_until_complete(reply_tweet_route())
+    loop.run_until_complete(quote_tweet_route())
+    loop.run_until_complete(retweet_route())
