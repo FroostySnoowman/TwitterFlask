@@ -3,7 +3,7 @@
 ## Getting Started
 To get started, simply put all accounts in the `accounts.txt` file in the format of `login:pass:email:emailpass`. If it is not in this format, it will be ignored.
 
-The next thing you need to do is install the required libraries. You can use the command `pip instal -r requirements.txt` and it will automatically handle the rest!
+The next thing you need to do is install the required libraries. You can use the command `pip install -r requirements.txt` and it will automatically handle the rest!
 
 Next, run the main.py file and yoiu should see all the accounts get created or give you a warning that they already exist. The API will run on port 5000, this can be changed on the very bottom line of the file if needed.
 
