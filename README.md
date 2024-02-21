@@ -12,13 +12,15 @@ You are now able to run the tests to make sure everything is working as expected
 ## Usage
 You will find all the endpoint usages here along with their expected responses.
 
-`get_tweets`
+### `get_tweets`
 ```curl
 curl -X POST http://127.0.0.1:5000/get_tweets \
 -H "Content-Type: application/json" \
 -d '{"user": "elonmusk"}'
 ```
-Response: ```json
+
+Expected Response:
+```json
 [
   {
     "id": "1234567890",
