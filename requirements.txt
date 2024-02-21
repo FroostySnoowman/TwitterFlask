@@ -1,0 +1,2 @@
+twitter-api-client==0.10.17
+twscrape==0.11.1
