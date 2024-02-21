@@ -19,17 +19,19 @@ curl -X POST http://127.0.0.1:5000/get_tweets \
 -d '{"user": "elonmusk"}'
 ```
 Response: ```json
-[{
-    "id": tweet.id,
-    "url": tweet.url,
-    "content": tweet.rawContent,
-    "likes": tweet.likeCount,
-    "views": tweet.viewCount,
-    "username": tweet.user.username,
-    "displayName": tweet.user.displayname,
-    "avatar": tweet.user.profileImageUrl,
-    "followers": tweet.user.followersCount,
-    "friends": tweet.user.friendsCount,
-    "verified": tweet.user.blue
-}]
+[
+  {
+    "id": "1234567890",
+    "url": "https://twitter.com/elonmusk/status/1234567890",
+    "content": "Just launched a car into space",
+    "likes": 420000,
+    "views": 1000000,
+    "username": "elonmusk",
+    "displayName": "Elon Musk",
+    "avatar": "https://example.com/avatar.jpg",
+    "followers": 50000000,
+    "friends": 100,
+    "verified": true
+  }
+]
 ```
